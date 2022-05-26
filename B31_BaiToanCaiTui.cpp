@@ -16,7 +16,7 @@ int main()
     {
         cin >> w[i];
     }
-    ms(dp , 0);
+    memset(dp , 0 , sizeof(dp));
     for(int i = 1 ; i <= n;i++)
     {
         for(int j = 0 ; j <= m ; j++)
