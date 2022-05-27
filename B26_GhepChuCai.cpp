@@ -3,31 +3,6 @@ using namespace std;
 typedef long long ll;
 const int MOD = 1e9 + 7;
 
-int a[1001] , ok , n;
-void ktao()
-{
-    for(int i  = 1 ; i <= n ; i++)
-    {
-        a[i] = 1;
-    }
-}
-void sinh()
-{
-    int i = n;
-    while(i >= 1 && a[i] == n)
-    {
-        --i;
-    }
-    if(i == 0) ok = 0;
-    else
-    {
-        a[i]++;
-        for(int j = i + 1 ; j <= n; j++)
-        {
-            a[j] = 1;
-        }
-    }
-}
 bool aka(char c)
 {
     return c == 'A' || c == 'E';
