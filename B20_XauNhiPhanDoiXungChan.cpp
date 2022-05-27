@@ -29,7 +29,7 @@ int main()
         while(ok)
         {
             string t = s ; reverse(t.begin() , t.end());
-            v.pb(s + t);
+            v.push_back(s + t);
             sinh();
         }
     }
